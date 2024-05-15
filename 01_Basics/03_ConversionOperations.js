@@ -17,6 +17,9 @@ let isLoggedIn = 1;
 let booleanIsLoggedIn = Boolean(isLoggedIn);
 console.log(booleanIsLoggedIn);
 
+// link to study
+// https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
+
 
 // While conversion You should always cross check the ans..
 
