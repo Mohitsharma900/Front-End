@@ -24,4 +24,4 @@ let isLoggedIn= false;
 
 //object
 
-console.log(typeof "hitesh")
+console.log(typeof "hitesh") 
