@@ -7,7 +7,7 @@ let accountState;
 
 //accountId= 2; // not allowed..
 /*
-never use var because of issue in block scope and lexical scope
+never use var because of issue in block scope..
 */
 
 accountEmail= " kajsb";
