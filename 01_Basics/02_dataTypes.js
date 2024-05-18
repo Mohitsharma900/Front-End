@@ -7,7 +7,7 @@ console.log(3
 );
 console.log(3+3);
 
-// ECMA is the real documentation..MDN is also used.
+// ECMA is the real(Standard) documentation..MDN is also used.
 
 let name= "hitesh";
 let age= 18;
