@@ -72,7 +72,10 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course  /*
+    this is used to destructure object and declare a
+    name to keys which makes it easier to access ..
+*/
 
 // console.log(courseInstructor);
 console.log(instructor);
