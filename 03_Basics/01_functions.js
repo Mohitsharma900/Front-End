@@ -1,0 +1,3 @@
+/*function is a package in which you store your
+lines of code which can be executed multiple 
+times when you call it*/
