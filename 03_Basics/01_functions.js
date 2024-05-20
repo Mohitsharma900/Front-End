@@ -2,21 +2,21 @@
 lines of code which can be executed multiple 
 times when you call it*/
 
-// console.log("M");
-// console.log("O");
-// console.log("H");
-// console.log("I");
-// console.log("T");
+console.log("M");
+console.log("O");
+console.log("H");
+console.log("I");
+console.log("T");
 
-// function sayMyName() {
-// console.log("M");
-// console.log("O");
-// console.log("H");
-// console.log("I");
-// console.log("T");
-// }
+function sayMyName() {
+console.log("M");
+console.log("O");
+console.log("H");
+console.log("I");
+console.log("T");
+}
 
-// sayMyName();
+sayMyName();
 
 
 /*                       parameters     */                
