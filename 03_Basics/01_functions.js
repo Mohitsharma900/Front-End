@@ -48,4 +48,28 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 console.log(loginUserMessage("hitesh")) //this will replace sam
 
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+}//rest operator is also used with 3 dots as spread
+//operator difference  is made by where you use it..
 
+console.log(calculateCartPrice(200, 400, 500,2000))
+
+ const user = {
+    userName : "Mohit",
+    price : 199
+ }
+
+ function handleObject(anyobject){
+    console.log(`username is ${anyobject.userName} and the price is ${anyobject.price}`)
+ }
+
+ handleObject(user);
+
+ const myNewArr = [200, 400, 600, 800]
+
+ function returnSecondValue(getArray){
+    return getArray[1]
+ }
+
+ console.log(returnSecondValue(myNewArr ))
