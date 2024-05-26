@@ -72,4 +72,5 @@ console.log(calculateCartPrice(200, 400, 500,2000))
     return getArray[1]
  }
 
- console.log(returnSecondValue(myNewArr ))
+ console.log(returnSecondValue(myNewArr ));
+ 
