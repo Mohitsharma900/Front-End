@@ -1,6 +1,6 @@
 const accountId = 14464;
 let accountEmail ="ms354@gmail.com";
-var accountPassword = "12350";//don't use..
+var accountPassword = "12350";//don't use..as var is accesible out of scope too..
 accountCity = "Jaipur";//don't use..
 let accountState;
 
