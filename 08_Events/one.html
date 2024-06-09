@@ -23,8 +23,44 @@
     //     alert("owl clicked")
     // } less features...
 
-    document.getElementById('owl').addEventListener('click',function(){
-        
-    })
+    document.getElementById('owl').addEventListener('click',function(e){
+        // alert('owl clicked')
+        console.log(e);
+    }, false)
+
+//type, timeStamp , defaultPrevented, 
+// target, toElement, srcElement, currenTarget
+//clientX, clientY, screenX, screenY
+//(altKey, ctrlKey, shiftKey)... keyCode..
+
+// document.getElementById('images').addEventListener
+// ('click',function(e){
+//     console.log("clicked inside the ul");
+// },false)
+
+// document.getElementById('owl').addEventListener
+// ('click',function(e){
+//     console.log("owl clicked")
+//     e.stopPropagation
+// },false)
+
+// document.getElementById('google').addEventListener
+// ('click',function(e){
+//     e.preventDefault()
+//     e.stopPropagation()
+//     console.log("Hey Babe");
+// },false)
+
+document.querySelector('#images').addEventListener
+('click', function(e){
+    console.log(e.target.tagName);
+    if (e.target.tagName=== 'IMG') {
+        let removeIt = e.target.parentNode;
+        removeIt.remove()
+    }
+// removeIt.parentNode.removeChild(removeIt)
+},false)
+ 
+
 </script>
 </html>
