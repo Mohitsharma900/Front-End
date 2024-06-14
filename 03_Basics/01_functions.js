@@ -74,3 +74,7 @@ console.log(calculateCartPrice(200, 400, 500,2000))
 
  console.log(returnSecondValue(myNewArr ));
  
+
+//  const functionOne = (function (num1 , num2){ 
+//     console.log(num1 + num2)
+//  })(45,52)
