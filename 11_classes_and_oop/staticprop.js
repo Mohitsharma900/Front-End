@@ -4,7 +4,7 @@ class user{
     }
 
     logMe(){
-        console.log(`usename: ${this.username}`);
+        console.log(`username: ${this.username}`);
     }
 
     static createId(){
@@ -13,7 +13,7 @@ class user{
 }
 
 const Mohit = new user("Mohit")
-// console.log(Mohit.createId())
+console.log(Mohit.createId())
 
 class Teacher extends user {
     constructor(username, email){
@@ -24,4 +24,4 @@ class Teacher extends user {
 
 const Iphone = new Teacher("iphone", "i@gmail.com")
 Iphone.logMe()
-// console.log(Iphone.createId());
+console.log(Iphone.createId());
