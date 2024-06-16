@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    <button class="button" id="Orange">
+        Orange
+    </button>
+    <button class="button" id="green">
+        green
+    </button>
+    <button class="button" id="black">
+        black
+    </button>
+    <button class="button" id="yellow">
+        yellow
+    </button>
+    <button class="button" id="red">
+        red
+    </button>
+    <button class="button" id="pink">
+        pink
+    </button>
+    <button class="button" id="blue">
+        blue
+    </button>
+    <button class="button" id="violet">
+        violet
+    </button>
+    <button class="button" id="indigo">
+        indigo
+    </button>
+    <button class="button" id="aliceblue">
+        aliceblue
+    </button>
+    <button class="button" id="beige">
+        beige
+    </button>
+    <button class="button" id="olive">
+        olive
+    </button>
+    <button class="button" id="#212121">
+        #212121
+    </button>
+</body>
+<script>
+    // function init() {
+    //     let name = "Mozilla"; 
+    //     function displayName() {
+    //         console.log(name); 
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+    //lexical scoping
+
+    // function outer(){
+    //     let userName = "Mohit";
+    //     function inner(){
+    //         console.log(userName);
+    //         let secret = 213
+    //     }
+    //     // console.log(secret); this can't be acccessed
+    //     function inner2(){
+    //         console.log(userName);
+    //     }
+    //     function inner3(){
+    //         function inner_inner() {
+    //             console.log(userName);
+    //         }
+    //         inner_inner()
+    //     }
+    //     inner3()
+    //     inner2()
+    //     inner()
+    // }
+    // outer()
+    // console.log(userName);
+
+
+    // closure 
+
+    function makeFunc() {
+        const name = "Mozilla";
+        function displayName() {
+            console.log(name);
+        }
+        return displayName;// yaha lexical scope ki vajah se outer function ka bhi pura data share hoga inner ko return karne me
+    }
+
+    const myFunc = makeFunc();
+    myFunc();
+
+</script>
+<script>
+    // document.getElementById('Orange').onclick = function(){
+    //     document.body.style.backgroundColor = "orange"
+    // }
+    // document.getElementById('green').onclick = function(){
+    //     document.body.style.backgroundColor = "green"
+    // }
+    
+    function clickHandler(color){
+        return function(){
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+    // document.getElementById('Orange').onclick = clickHandler('orange')
+    const buttons = document.querySelectorAll('.button');
+    buttons.forEach(docid => {
+        const ids= docid.id
+        // console.log(ids);
+        document.getElementById(ids).onclick = clickHandler(ids)
+    });
+</script>
+</html>
