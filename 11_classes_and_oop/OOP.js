@@ -22,6 +22,11 @@ function user2(username, loginCount, isLoggedIn){
 }
 
 const userOne = new user2("Mohit", 5, true)
+// if something is common which doesn't need a parameter for declaration pass it as prototype so that it doesn't take space every time you create an objeect 
+// it will take reference from prototype everytime it is created rather creating a function each time for each object.
+user2.prototype.Text = function (){
+    console.log("Prototype single memory usage")
+}
 const userTwo = new user2("Kunal", 8, true)
 console.log(userOne);
 console.log(userTwo);
