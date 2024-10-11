@@ -19,7 +19,7 @@ function user2(username, loginCount, isLoggedIn){
     this.isLoggedIn= isLoggedIn;
 
     return this;
-}
+}//this is a constructor function ...it usually returns ntg.
 
 const userOne = new user2("Mohit", 5, true)
 // if something is common which doesn't need a parameter for declaration pass it as prototype so that it doesn't take space every time you create an objeect 
